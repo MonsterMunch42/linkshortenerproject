@@ -44,10 +44,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               </span>
               <span>TIDYLINK</span>
             </Link>
-            <nav className="hidden items-center gap-8 text-sm font-medium text-[#9fb0a5] md:flex" aria-label="Main navigation">
-              <Link href="/#features" className="transition-colors hover:text-[#e65e43]">Features</Link>
-              <Link href="/#how-it-works" className="transition-colors hover:text-[#e65e43]">Get started</Link>
-            </nav>
             <Suspense>
               <div className="flex items-center gap-2">
                 <Show when="signed-out">
