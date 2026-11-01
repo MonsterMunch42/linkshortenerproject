@@ -168,11 +168,6 @@ export default function Home() {
               <p className="mt-1 text-sm text-[#9fb0a5]">Start with a link. Leave with a better one.</p>
             </div>
           </div>
-          <SignUpButton mode="modal">
-            <Button className="h-11 rounded-lg bg-[#eef2ea] px-5 text-[#0e1411] hover:bg-white">
-              Get started <ArrowRight />
-            </Button>
-          </SignUpButton>
         </div>
       </section>
 

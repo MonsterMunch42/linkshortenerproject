@@ -2,11 +2,10 @@ import {
   ClerkProvider,
   Show,
   SignInButton,
-  SignUpButton,
   UserButton,
 } from "@clerk/nextjs";
 import { shadcn } from "@clerk/ui/themes";
-import { ArrowUpRight, Link2 } from "lucide-react";
+import { Link2 } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -50,11 +49,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                   <SignInButton mode="modal">
                     <Button variant="ghost" className="hidden text-[#b4c4b9] hover:bg-white/10 sm:inline-flex">Sign in</Button>
                   </SignInButton>
-                  <SignUpButton mode="modal">
-                    <Button className="bg-[#eef2ea] text-[#0e1411] hover:bg-white">
-                      Get started <ArrowUpRight />
-                    </Button>
-                  </SignUpButton>
                 </Show>
                 <Show when="signed-in">
                   <UserButton />
